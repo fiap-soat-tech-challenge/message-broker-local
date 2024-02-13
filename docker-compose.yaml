@@ -8,9 +8,8 @@ services:
       - "5672:5672"
       - "15672:15672"
     volumes:
-      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
-      - ./definitions.json:/etc/rabbitmq/definitions.json
       - ./data/rabbitmq:/var/lib/rabbitmq
       - ./data/log:/var/log/rabbitmq
-    env_file:
-      - .env.docker
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: pass
