@@ -37,6 +37,5 @@ no seguinte endereço http://localhost:15672 e para login use:
 
 ### Queues
 
-As filas são criadas dinamicamente, então quando subir os serviços e executar algumas ação 
-(publicar ou consumir) de alguma fila a mesma será criada automaticamente e você poderá visualizar as 
-mesmas acessando a aba **Queues and Streams**.
+Acessando a aba **Queues and Streams**, você verá as filas criadas pelo arquivo `definitions.json`, 
+fique a vontande para alterar este arquivo conforme a necessidade!
